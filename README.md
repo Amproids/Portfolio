@@ -1,2 +1,2 @@
 # Website
-Website for Amelia
+Resumer Website to showcase my previous and current projcets.
