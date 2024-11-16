@@ -1,31 +1,179 @@
-﻿<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Andrew Parry - About Me</title>
-        <meta name="description" content="My website resume to showcase my programming and computer engineering qualities.">
-        <meta name="author" content="Andrew Parry">
-        <meta property="og:title" content="Andrew Parry - About Me">
-        <meta property="og:type" content="website">
-        <meta property="og:image" content="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fce%2Fff%2F86%2Fceff86e1fa44fa6a5b01ce67c07ef363.jpg&f=1&nofb=1&ipt=d9b7061a3dcb4d42e1a813cfd3b9a249f9cdc595126f086162b5762993f078d1&ipo=images">
-        <meta property="og:url" content="https://amproids.github.io/Website/">
-        
-        <link rel="stylesheet" href="styles/font-import.css">
-        <link rel="stylesheet" href="styles/normalize.css">
-        <link rel="stylesheet" href="styles/style.css">
-        <link rel="icon" href="icon/favicon.ico">
-    </head>
-    
-    <body>
-        <header>
-            <img src="images/profile.webp" alt="Andrew Parry Profile" width="300">
-        </header>
-        <h1>About Me</h1>
-        <div>
-            <p1>
-                My name is Andrew Parry. I'm a Software Developmeent Undergraduate at BYU Pathway Worldwide.
-                I really love creating things with code. I had a go at making some video games, some better than others :>
-                I live in the pretty little town of Mapleton, Utah.
-            </p1>
-        </div>
-    </body>
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrew L. Parry - Software Developer</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Andrew L. Parry</h1>
+        <p class="tagline">Software Developer | Game Development Enthusiast</p>
+        <nav>
+            <a target="_blank" href="https://github.com/Amproids">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a target="_blank" href="https://itch.io/profile/amproids">
+                <i class="fas fa-gamepad"></i> itch.io
+            </a>
+            <a href="#featured-projects">
+                <i class="fas fa-star"></i> Featured
+            </a>
+            <a href="#all-projects">
+                <i class="fas fa-code"></i> All Projects
+            </a>
+            <a href="#contact">
+                <i class="fas fa-envelope"></i> Contact
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card about-section">
+            <h2>About Me</h2>
+            <img src="images/profile.webp" alt="Professional headshot of Andrew Parry" id="profileimage">
+            <p>My name is Andrew Parry. I am a passionate programmer with deep interest in game development. I first discovered coding through my older brothers' influence. Currently pursuing a Software Development degree at BYU-Pathway, I have developed strong expertise in web development while maintaining proficiency in multiple programming languages including Python, JavaScript, HTML/CSS, C#, and Lua.</p>
+            
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <div class="skill-categories">
+                    <div class="skill-category">
+                        <h4>Languages</h4>
+                        <ul>
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>C#</li>
+                            <li>Lua</li>
+                            <li>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h4>Tools & Frameworks</h4>
+                        <ul>
+                            <li>Unity</li>
+                            <li>Git</li>
+                            <li>VS Code</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card projects-section" id="featured-projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project featured">
+                    <h3>Alternative Voting Methods Demo</h3>
+                    <p>Interactive demonstration showcasing different voting systems and their outcomes.</p>
+                    <div class="project-tags">
+                        <span>JavaScript</span>
+                        <span>HTML/CSS</span>
+                        <span>Interactive</span>
+                    </div>
+                    <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <!-- Add more featured projects here -->
+            </div>
+        </section>
+
+        <section class="card projects-section" id="all-projects">
+            <h2>All Projects</h2>
+            <div class="project-categories">
+                <div class="project-category">
+                    <button class="category-toggle">
+                        <div class="toggle-header">
+                            <i class="fas fa-globe"></i>
+                            <span>Web Development</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="category-content">
+                        <div class="project-grid">
+                            <div class="project">
+                                <h3>Voting Methods Demo</h3>
+                                <p>Interactive voting systems demonstration showing different electoral methods and their outcomes.</p>
+                                <div class="project-tags">
+                                    <span>JavaScript</span>
+                                    <span>HTML/CSS</span>
+                                </div>
+                                <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <!-- Add more web projects here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-category">
+                    <button class="category-toggle">
+                        <div class="toggle-header">
+                            <i class="fas fa-gamepad"></i>
+                            <span>Game Development</span>
+                        </div>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="category-content">
+                        <div class="project-grid">
+                            <div class="project">
+                                <h3>Game Jam Project</h3>
+                                <p>A game created during a game jam event featuring unique mechanics and storytelling.</p>
+                                <div class="project-tags">
+                                    <span>Unity</span>
+                                    <span>C#</span>
+                                </div>
+                                <a href="#" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <!-- Add more game projects here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="card contact-section" id="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-info">
+                <a href="mailto:parryandrew47@gmail.com">
+                    <i class="fas fa-envelope"></i> Email Me
+                </a>
+                <a href="https://www.linkedin.com/in/andrew-parry-66b405258/" target="_blank">
+                    <i class="fab fa-linkedin"></i> Connect on LinkedIn
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><span id="currentyear"></span> | Andrew L. Parry | Utah, USA</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+
+    <script src="scripts/getdates.js"></script>
+    <script>
+        document.querySelectorAll('.category-toggle').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('.fa-chevron-down');
+                const wasOpen = button.classList.contains('active');
+                
+                // Close all other categories
+                document.querySelectorAll('.category-toggle.active').forEach(activeButton => {
+                    if (activeButton !== button) {
+                        activeButton.classList.remove('active');
+                        activeButton.querySelector('.fa-chevron-down').style.transform = 'rotate(0deg)';
+                        activeButton.nextElementSibling.style.maxHeight = null;
+                    }
+                });
+
+                // Toggle the clicked category
+                button.classList.toggle('active');
+                content.style.maxHeight = wasOpen ? null : `${content.scrollHeight}px`;
+                icon.style.transform = wasOpen ? 'rotate(0deg)' : 'rotate(180deg)';
+            });
+        });
+    </script>
+</body>
+</html>
