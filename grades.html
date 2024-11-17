@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Record - Andrew L. Parry</title>
+    <link rel="stylesheet" href="styles/grades.css">
+</head>
+<body>
+    <div class="card">
+        <div class="card-header">
+            <h1 class="card-title">Academic Record - Andrew L. Parry</h1>
+        </div>
+        <div class="card-content">
+            <!-- Semesters will be dynamically inserted here -->
+            <div id="semestersContainer"></div>
+
+            <!-- Cumulative Statistics -->
+            <div class="cumulative-stats">
+                <h3>Cumulative Statistics</h3>
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <p class="stat-label">Credits Attempted</p>
+                        <p class="stat-value" id="totalAttempted">-</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Credits Earned</p>
+                        <p class="stat-value" id="totalEarned">-</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Transfer Credits</p>
+                        <p class="stat-value" id="totalTransfer">-</p>
+                    </div>
+                    <div class="stat-item">
+                        <p class="stat-label">Cumulative GPA</p>
+                        <p class="stat-value" id="cumGPA">-</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Template for semester table -->
+    <template id="semesterTemplate">
+        <div class="semester-container">
+            <div class="semester-header">
+                <h3 class="semester-title"></h3>
+                <div class="semester-stats">
+                    <span class="attempted"></span>
+                    <span class="earned"></span>
+                    <span class="points"></span>
+                    <span class="gpa"></span>
+                </div>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course Code</th>
+                            <th>Course Name</th>
+                            <th>Credits</th>
+                            <th>Grade</th>
+                            <th>Transfer</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="2">Semester Totals:</td>
+                            <td class="total-credits"></td>
+                            <td colspan="2" class="semester-gpa"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </template>
+
+    <script src="scripts/grades.js"></script>
+</body>
+</html>

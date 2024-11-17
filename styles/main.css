@@ -34,7 +34,7 @@ header {
     background-color: #2a2a2a;
     color: white;
     text-align: center;
-    padding: 2rem 1rem;
+    padding-top: 2rem;
 }
 
 header h1 {
@@ -149,11 +149,14 @@ main {
 }
 
 .skill-category ul {
+    width: 60%;
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .skill-category ul li {
-    padding: 0.3rem 0;
+    padding: 0.2rem 0.7rem;
     display: flex;
     align-items: center;
     gap: 0.5rem;
