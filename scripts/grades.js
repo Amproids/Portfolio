@@ -34,9 +34,9 @@ const courseBySemester = {
     ],
     "Fall 2024": [
         { code: "CSE 340", name: "Web Backend Development", credits: 3, grade: "A", transfer: "N", retaken: false },
-        { code: "REL 275C", name: "Teachings of Book of Mormon", credits: 2, grade: "IP", transfer: "N", retaken: false },
-        { code: "WDD 131", name: "Dynamic Web Fundamentals", credits: 2, grade: "IP", transfer: "N", retaken: false },
-        { code: "WDD 330", name: "Web Frontend Development 2", credits: 3, grade: "IP", transfer: "N", retaken: false },
+        { code: "REL 275C", name: "Teachings of Book of Mormon", credits: 2, grade: "A", transfer: "N", retaken: false },
+        { code: "WDD 131", name: "Dynamic Web Fundamentals", credits: 2, grade: "A", transfer: "N", retaken: false },
+        { code: "WDD 330", name: "Web Frontend Development 2", credits: 3, grade: "A", transfer: "N", retaken: false },
         { code: "WRIT 101", name: "Writing Professional Context", credits: 3, grade: "A", transfer: "N", retaken: false }
     ]
 };
