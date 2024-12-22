@@ -29,8 +29,8 @@ const courseBySemester = {
     ],
     "Spring 2024": [
         { code: "ENG 150", name: "Writing/Reasoning Foundations", credits: 3, grade: "UW", transfer: "N", retaken: false },
-        { code: "REL 275C", name: "Teachings of Book of Mormon", credits: 2, grade: "UW", transfer: "N", retaken: false },
-        { code: "WDD 330", name: "Web Frontend Development 2", credits: 3, grade: "UW", transfer: "N", retaken: false }
+        { code: "REL 275C", name: "Teachings of Book of Mormon", credits: 2, grade: "UW", transfer: "N", retaken: true },
+        { code: "WDD 330", name: "Web Frontend Development 2", credits: 3, grade: "UW", transfer: "N", retaken: true }
     ],
     "Fall 2024": [
         { code: "CSE 340", name: "Web Backend Development", credits: 3, grade: "A", transfer: "N", retaken: false },
