@@ -38,6 +38,12 @@ const courseBySemester = {
         { code: "WDD 131", name: "Dynamic Web Fundamentals", credits: 2, grade: "A", transfer: "N", retaken: false },
         { code: "WDD 330", name: "Web Frontend Development 2", credits: 3, grade: "A", transfer: "N", retaken: false },
         { code: "WRIT 101", name: "Writing Professional Context", credits: 3, grade: "A", transfer: "N", retaken: false }
+    ],
+    "Winter 2025": [
+        { code: "CSE 212", name: "Programing With Data Structures", credits: 2, grade: "A", transfer: "N", retaken: false },
+        { code: "CSE 270", name: "Software Testing", credits: 3, grade: "B", transfer: "N", retaken: false },
+        { code: "CSE 310", name: "Applied Programming", credits: 3, grade: "A", transfer: "N", retaken: false },
+        { code: "REL 290", name: "The Divine Gift of Forgiveness", credits: 1, grade: "A", transfer: "N", retaken: false }
     ]
 };
 
