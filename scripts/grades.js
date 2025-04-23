@@ -25,7 +25,7 @@ const courseBySemester = {
         { code: "CIT 111", name: "Introduction to Databases", credits: 3, grade: "A", transfer: "N", retaken: false },
         { code: "MATH 108X", name: "Math for the Real World", credits: 3, grade: "A", transfer: "N", retaken: false },
         { code: "REL 250C", name: "Jesus Christ Evrlst Gospel", credits: 2, grade: "C", transfer: "N", retaken: false },
-        { code: "WDD 230", name: "Web Frontend Development 1", credits: 3, grade: "F", transfer: "N", retaken: false }
+        { code: "WDD 230", name: "Web Frontend Development 1", credits: 3, grade: "F", transfer: "N", retaken: true }
     ],
     "Spring 2024": [
         { code: "ENG 150", name: "Writing/Reasoning Foundations", credits: 3, grade: "UW", transfer: "N", retaken: false },
@@ -43,7 +43,10 @@ const courseBySemester = {
         { code: "CSE 212", name: "Programing With Data Structures", credits: 2, grade: "A", transfer: "N", retaken: false },
         { code: "CSE 270", name: "Software Testing", credits: 3, grade: "B", transfer: "N", retaken: false },
         { code: "CSE 310", name: "Applied Programming", credits: 3, grade: "A", transfer: "N", retaken: false },
-        { code: "REL 290", name: "The Divine Gift of Forgiveness", credits: 1, grade: "A", transfer: "N", retaken: false }
+        { code: "REL 290", name: "The Divine Gift of Forgiveness", credits: 2, grade: "A", transfer: "N", retaken: false },
+        { code: "WDD 230", name: "Web Frontend Development 1", credits: 3, grade: "A", transfer: "N", retaken: false },
+        { code: "BUS 301", name: "Advanced Writing in Business Contexts", credits: 3, grade: "A", transfer: "N", retaken: false },
+        { code: "CSE 370", name: "Software Engineering Principles", credits: 2, grade: "A", transfer: "Y", retaken: false }
     ]
 };
 
