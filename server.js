@@ -36,13 +36,13 @@ app.post('/webhook', (req, res) => {
         console.log('Event:', req.headers['x-github-event']);
         
         // Only deploy on push events to main branch
-        if (req.headers['x-github-event'] === 'push' && req.body.ref === 'refs/heads/main') {
+        if (req.headers['x-github-event'] === 'push' && req.body.ref === 'refs/heads/master') {
             console.log('🚀 Triggering deployment...');
             
             // Run deployment script in background
             setTimeout(() => {
                 try {
-                    execSync('/home/andrew/deploy-portfolio.sh', { stdio: 'inherit' });
+                    execSync('~/deploy-portfolio.sh', { stdio: 'inherit' });
                     console.log('✅ Deployment completed successfully');
                 } catch (error) {
                     console.error('❌ Deployment failed:', error.message);
