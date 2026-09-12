@@ -1,6 +1,5 @@
 const projectCardsFeatured = document.querySelector('#projectcards-featured');
 const projectCardsWeb = document.querySelector('#projectcards-web');
-const projectCardsGame = document.querySelector('#projectcards-game');
 const projects = [
     {
         title: "Fitness App & Exercise Tracker",
@@ -101,6 +100,7 @@ const projects = [
 ];
 for (let i = 0; i < projects.length; i++) {
     const project = projects[i];
+    if (project.type === 'game') continue;
     if (project.featured) {
         projectCardsFeatured.innerHTML += `
         <div class="project featured">
@@ -115,17 +115,6 @@ for (let i = 0; i < projects.length; i++) {
     }
     if (project.type == 'web') {
         projectCardsWeb.innerHTML += `
-        <div class="project">
-        <h3>${project.title}</h3>
-        <p>${project.description}</p>
-        <div class="project-tags">
-        ${project.tags.map(tag => `<span>${tag}</span>`).join('')}
-        </div>
-        <a href="${project.link}" target="_blank" class="project-link">View Project <i class="fas fa-external-link-alt"></i></a>
-        </div>
-        `;
-    } else if (project.type == 'game') {
-        projectCardsGame.innerHTML += `
         <div class="project">
         <h3>${project.title}</h3>
         <p>${project.description}</p>
